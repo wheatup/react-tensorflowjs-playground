@@ -1,8 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './scss/style.scss';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import * as tf from '@tensorflow/tfjs';
+import '@tensorflow/tfjs-backend-webgl';
+tf.setBackend('webgl');
 
 ReactDOM.render(
   <React.StrictMode>
